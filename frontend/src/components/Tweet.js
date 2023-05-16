@@ -2,10 +2,10 @@ import '../App.css';
 import React, {useEffect, useState} from 'react';
 import SelectComponent from './SelectComponent';
 // import {Link} from 'react-router-dom';
+//src="https://cdn.jsdelivr.net/npm/chart.js"
 
 function Tweet() {
-
-
+  
    /*  const options = [ 
         {key: 1, value: "Test 1"},
         {key: 2, value: "Test 2"},
@@ -32,14 +32,14 @@ function Tweet() {
     const options = items.map(item => {
         return {
             key: item._id,
-            value: item.course_name
+            value: item.CourseID
             //topic: item.topic_1, //new
             //probability: item.probability_1 //new
         }
     });
 
-    //console.log("HELLO")
-
+   
+          
     return(
         <section>
             <div> 
@@ -51,18 +51,20 @@ function Tweet() {
                 />
                 <p className="sel-option"> Selected option: {selectedOption}</p>
             </div>
-            {
-            items.map(item => (
-                <div className="courses-map">
-                    <p>Course name: {item.course_name}</p>
-                    <p>Course id: {item.course_id}</p>
-                    <p>Topic 1: {item.topic_1}</p>
-                    <p>Probability 1: {item.probability_1}</p>
-                </div>
-            ))
-            }
-        </section>
+       
+            
+            <div className="courses-map">
+                <p>Course name: {options.CourseID}</p>
+                <p>Course id: {options.courseName}</p>
+                <p>Topic/Probability: {options.topic}</p>
+            </div>
+            
+        </section> 
+           
+    
     );
 }
+
+
 
 export default Tweet;

@@ -4,6 +4,15 @@ const Schema = mongoose.Schema
 
 const courseSchema = new Schema({
     //_id: {type:mongoose.ObjectId},
+    CourseID: {type:String},
+    courseName: {type:String},
+    topic:{String}
+})
+
+
+
+/* const courseSchema = new Schema({
+    //_id: {type:mongoose.ObjectId},
     course_name: {type:String},
     course_id: {type:Number},
     topic_1: {type:String},
@@ -16,7 +25,7 @@ const courseSchema = new Schema({
     probability_4: {type: Number},
     topic_5: {type:String},
     probability_5: {type: Number},
-})
+}) */
 
 
 const Courses = mongoose.model('Courses', courseSchema, 'courses');

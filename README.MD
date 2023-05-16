@@ -7,12 +7,11 @@ This is the repository for the frontend and backend of the user interface to acc
 To run the project locally, you need to install the following:
 - node
 - npm
+- express
 
 After installing those packages, run
 
-    npm cd backend
-
-    npm install
+    cd backend
 
 Then, to run the frontend and backend of the web application:    
 
@@ -24,7 +23,7 @@ or, to run just the backend:
 
 Otherwise, to run just the frontend:
 
-    npm cd frontend
+    cd frontend
 
     npm start
 

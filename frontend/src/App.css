@@ -125,7 +125,8 @@
 
 .sel-option{
   position: relative;
-  top: 160px;
+  top:10px;
+  left: 400px;
 }
 
 .courses-map{
